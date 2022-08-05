@@ -2,7 +2,7 @@ FROM python:3.7-alpine3.8
 
 LABEL maintainer="synodriver"
 
-COPY requirements.txt /tmp/requirements.txt
+COPY ./requirements.txt /tmp/requirements.txt
 RUN pip install --no-cache-dir -r /tmp/requirements.txt -i https://pypi.org/simple
 
 #COPY ./start.sh /start.sh
@@ -16,7 +16,7 @@ COPY ./main.py /main.py
 #RUN chmod +x /start-reload.sh
 
 COPY ./app /app
-COPY ./log /log
+
 
 #ENV PYTHONPATH=/app
 

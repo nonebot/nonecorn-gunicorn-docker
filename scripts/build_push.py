@@ -5,6 +5,8 @@ import asyncio
 import os
 
 NAME = os.getenv("NAME")
+if NAME == "latest":
+    NAME = "python3.10"
 
 
 async def build_one():
