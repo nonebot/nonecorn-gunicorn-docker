@@ -1,5 +1,5 @@
 """
-Copyright (c) 2008-2022 synodriver <synodriver@gmail.com>
+Copyright (c) 2008-2024 synodriver <synodriver@gmail.com>
 """
 import asyncio
 import os

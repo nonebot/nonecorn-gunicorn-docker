@@ -9,7 +9,11 @@ jobs:
       matrix:
         image:
           - name: latest
-            python_version: "3.10"
+            python_version: "3.12"
+          - name: python3.12
+            python_version: "3.12"
+          - name: python3.11
+            python_version: "3.11"
           - name: python3.10
             python_version: "3.10"
           - name: python3.9
@@ -18,20 +22,28 @@ jobs:
             python_version: "3.8"
           - name: python3.7
             python_version: "3.7"
+          - name: python3.12-slim
+            python_version: "3.12"
+          - name: python3.11-slim
+            python_version: "3.11"
           - name: python3.10-slim
             python_version: "3.10"
           - name: python3.9-slim
             python_version: "3.9"
           - name: python3.8-slim
             python_version: "3.8"
-          - name: python3.9-alpine3.14
-            python_version: "3.9"
-          - name: python3.8-alpine3.10
-            python_version: "3.8"
-          - name: python3.7-alpine3.8
-            python_version: "3.7"
-          - name: python3.10-alpine3.16
+          - name: python3.12-alpine3.19
+            python_version: "3.12"
+          - name: python3.11-alpine3.19
+            python_version: "3.11"
+          - name: python3.10-alpine3.19
             python_version: "3.10"
+          - name: python3.9-alpine3.19
+            python_version: "3.9"
+          - name: python3.8-alpine3.19
+            python_version: "3.8"
+          - name: python3.7-alpine3.18
+            python_version: "3.7"
       fail-fast: true
     runs-on: ubuntu-18.04
     steps:

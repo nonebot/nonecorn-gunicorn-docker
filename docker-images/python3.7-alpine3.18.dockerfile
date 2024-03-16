@@ -1,4 +1,4 @@
-FROM python:3.12
+FROM python:3.7-alpine3.18
 
 LABEL maintainer="synodriver"
 
