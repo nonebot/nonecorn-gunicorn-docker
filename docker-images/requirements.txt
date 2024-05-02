@@ -1,2 +1,3 @@
-nonecorn>=0.16.0.dev3
+nonecorn>=0.16.0.dev5
+uvloop
 gunicorn
